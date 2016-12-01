@@ -5,8 +5,8 @@ phases:
     commands:
       - apt-get upgrade
       - apt-get update
-      - apt-get install docker
-      - docker ps
+      - apt-get install docker-engine
+      - service docker start
       - pip install docker-compose
       - echo Build started on `date`
       - echo Building the Docker image...          
