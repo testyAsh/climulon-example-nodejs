@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing compose
+      - apt-get install docker-compose
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker-compose build
