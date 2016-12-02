@@ -3,6 +3,8 @@ version: 0.1
 phases:
   build:
     commands:
+      - pip install docker-compose
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build .
+      - docker-compose up
