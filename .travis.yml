@@ -8,3 +8,4 @@ env:
 
 script:
   - docker-compose build
+
