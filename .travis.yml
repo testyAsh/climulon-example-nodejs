@@ -4,7 +4,10 @@ services:
   - docker
 
 env:
-  DOCKER_COMPOSE_VERSION: 1.8.1
+  - DOCKER_COMPOSE_VERSION=1.8.1
+  - cmd=/bin/ps
+  - cmd=node --version 
+  
 
 script:
   - docker-compose build
