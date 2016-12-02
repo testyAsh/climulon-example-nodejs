@@ -8,7 +8,7 @@ env:
   - cmd=/bin/ps
   - cmd=node --version 
   
-
 script:
-  - docker-compose run $cmd
+  - docker-compose build
+  - echo $cmd
 
