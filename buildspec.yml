@@ -7,4 +7,3 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build .
-      - docker-compose up
