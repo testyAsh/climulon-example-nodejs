@@ -5,5 +5,6 @@ node { // <1>
     }
     stage('Build') { 
         sh 'docker build .'
+        sh 'sleep 120'
     }
 }
