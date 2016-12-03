@@ -1,7 +1,6 @@
 node { // <1>
     stage('Build') { // <2>
-        sh 'yum install docker'
-        sh 'apt-get install docker' // <3>
+        sh 'sudo yum install docker'
         sh 'pip install docker-compose'
     }
 }
